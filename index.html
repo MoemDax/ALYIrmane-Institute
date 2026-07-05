@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Institut polyvalent ALYIrmane</title>
-    <link rel="stylesheet" href="/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <nav>
-        <a href="#"><img src="./assets/logo.png" alt=""></a>
-        <a href="#">Contact</a>
+        <a href="./"><img src="./assets/logo.png" alt="Logo Institut ALYIrmane"></a>
+        <a href="#contacts">Contact</a>
         <a href="#">S'enregistrer</a>
     </nav>
 
@@ -18,13 +21,13 @@
         <div id="presentation_intro">
             <div id="presentation_imgs">
                 <div id="presentation_image">
-                    <img src="./assets/photo école_page-0001.jpg" alt="image de présentation">
+                    <img src="./assets/photo école_page-0001.jpg" alt="Photo de l'école ALYIrmane">
                 </div>
                 <div id="presentation_image2">
-                    <img src="./assets/photo graduation fille_page-0001.jpg" alt="image de présentation">
+                    <img src="./assets/photo graduation fille_page-0001.jpg" alt="Photo remise de diplôme">
                 </div>
                 <div id="presentation_image3">
-                    <img src="./assets/photo graduation_page-0001.jpg" alt="image de présentation">
+                    <img src="./assets/photo graduation_page-0001.jpg" alt="Photo cérémonie de graduation">
                 </div>
             </div>
             <div id="presentation_texte">   
@@ -48,7 +51,7 @@
             
             <div id="gallery_box_1" class="gallery-box active">
                 <div class="gallery-image">
-                    <img src="./assets/photo en classe_page-0001.jpg" alt="image de galerie">
+                    <img src="./assets/photo en classe_page-0001.jpg" alt="Étudiants en classe">
                 </div>
                 <div class="gallery-text">
                     <h3>Description de l'image <br> Galerie 1</h3>
@@ -76,7 +79,7 @@
 
             <div id="gallery_box_2" class="gallery-box">
                 <div class="gallery-image">
-                    <img src="./assets/photo école_page-0001.jpg" alt="image de galerie">
+                    <img src="./assets/photo école_page-0001.jpg" alt="Bâtiment de l'école">
                 </div>
                 <div class="gallery-text">
                     <h3>Description de l'image <br> Galerie 2</h3>
@@ -104,7 +107,7 @@
 
             <div id="gallery_box_3" class="gallery-box">
                 <div class="gallery-image">
-                    <img src="./assets/photo graduation_page-0001.jpg" alt="image de galerie">
+                    <img src="./assets/photo graduation_page-0001.jpg" alt="Cérémonie de remise de diplômes">
                 </div>
                 <div class="gallery-text">
                     <h3>Description de l'image <br> Galerie 3</h3>
@@ -132,7 +135,7 @@
 
             <div id="gallery_box_4" class="gallery-box">
                 <div class="gallery-image">
-                    <img src="./assets/photo graduation fille_page-0001.jpg" alt="image de galerie">
+                    <img src="./assets/photo graduation fille_page-0001.jpg" alt="Étudiante diplômée">
                 </div>
                 <div class="gallery-text">
                     <h3>Description de l'image <br> Galerie 4</h3>
@@ -159,7 +162,7 @@
             </div>
             <div id="gallery_box_5" class="gallery-box">
                 <div class="gallery-image">
-                    <img src="./assets/image_gallery2.png" alt="image de galerie">
+                    <img src="./assets/image_gallery2.png" alt="Image galerie 5">
                 </div>
                 <div class="gallery-text">
                     <h3>Description de l'image <br> Galerie 5</h3>
@@ -185,8 +188,8 @@
                 </div>
             </div>
         </div>
-        <button class="button_1_left"> < </button>
-        <button class="button_1_right"> > </button>
+        <button class="button_1_left" aria-label="Galerie précédente"> < </button>
+        <button class="button_1_right" aria-label="Galerie suivante"> > </button>
     </section>
 
     <!-- SECTION 3: CONTACTS -->
@@ -206,10 +209,10 @@
             <div id="footer_social">
                 <h3>Suivez-Nous</h3>
                 <ul>
-                    <li><a href="#" target="_blank"><img src="assets/facebook.svg" alt="Facebook"></a></li>
-                    <li><a href="#" target="_blank"><img src="assets/whatsapp.svg" alt="Whatsapp"></a></li>
-                    <li><a href="#" target="_blank"><img src="assets/linkedin.svg" alt="LinkedIn"></a></li>
-                    <li><a href="#" target="_blank"><img src="assets/x.svg" alt="X"></a></li>
+                    <li><a href="#" target="_blank" aria-label="Facebook"><img src="assets/facebook.svg" alt="Facebook"></a></li>
+                    <li><a href="#" target="_blank" aria-label="Whatsapp"><img src="assets/whatsapp.svg" alt="Whatsapp"></a></li>
+                    <li><a href="#" target="_blank" aria-label="LinkedIn"><img src="assets/linkedin.svg" alt="LinkedIn"></a></li>
+                    <li><a href="#" target="_blank" aria-label="X (Twitter)"><img src="assets/x.svg" alt="X"></a></li>
                 </ul>
                 <p style="margin-top: 30px; font-size: 12px; color: #888;">
                     © 2026 Institut Polyvalent ALY Irmane. Tous droits réservés.
