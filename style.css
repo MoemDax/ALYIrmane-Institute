@@ -398,7 +398,31 @@
         text-align: justify;
     }
 
-    /* MEDIA QUERIES - MOBILE*/
+    /* MEDIA QUERIES - DESKTOP & TABLETS */
+    @media (max-width: 1200px) {
+        #presentation_image {
+            width: 400px;
+            height: 400px;
+            left: 5%;
+        }
+
+        #presentation_image2 {
+            width: 200px;
+            height: 200px;
+            left: 40%;
+        }
+
+        #presentation_image3 {
+            width: 200px;
+            height: 200px;
+        }
+
+        .gallery-image img {
+            width: 500px;
+            height: 300px;
+        }
+    }
+
     @media (max-width: 1024px) {
         #presentation_intro {
             padding: 30px;
@@ -412,6 +436,25 @@
             padding: 40px;
         }
 
+        #presentation_image {
+            width: 300px;
+            height: 300px;
+            left: 10%;
+            display: none;
+        }
+
+        #presentation_image2 {
+            width: 180px;
+            height: 180px;
+            left: 45%;
+        }
+
+        #presentation_image3 {
+            width: 180px;
+            height: 180px;
+            display: none;
+        }
+
         .gallery-box {
             flex-direction: column;
             gap: 20px;
@@ -422,12 +465,20 @@
             height: 300px;
         }
 
+        .gallery-text {
+            max-width: 100%;
+            min-width: 100%;
+            height: auto;
+            max-height: 300px;
+        }
+
         #footer_content {
             flex-direction: column;
             gap: 30px;
         }
     }
 
+    /* MEDIA QUERIES - TABLET */
     @media (max-width: 768px) {
         nav {
             width: 95%;
@@ -439,12 +490,39 @@
             font-size: 14px;
         }
 
+        nav a img {
+            width: 100px;
+        }
+
+        #presentation {
+            padding: 20px;
+            padding-top: 80px;
+        }
+
+        #presentation_intro {
+            padding: 20px;
+            gap: 15px;
+        }
+
+        #presentation_texte {
+            width: 100%;
+            padding: 30px;
+            align-items: center;
+            text-align: center;
+        }
+
         #presentation_texte h2 {
-            font-size: 24px;
+            font-size: 28px;
+            text-align: center;
         }
 
         #presentation_texte p {
             font-size: 14px;
+            text-align: center;
+        }
+
+        #presentation_image, #presentation_image2, #presentation_image3 {
+            display: none !important;
         }
 
         .gallery-image img {
@@ -456,26 +534,91 @@
             max-width: 100%;
             height: auto;
             max-height: 300px;
+            padding: 20px;
+        }
+
+        .gallery-text h3 {
+            font-size: 28px;
         }
 
         #gallery h2 {
             font-size: 28px;
+            top: 10px;
+        }
+
+        .button_1_left, .button_1_right {
+            width: 45px;
+            height: 45px;
+            font-size: 20px;
+        }
+
+        #box_1, #box_2 {
+            width: 100%;
         }
     }
 
-    @media (max-width: 480px) {
+    /* MEDIA QUERIES - SMALL TABLET */
+    @media (max-width: 600px) {
+        nav {
+            flex-direction: column;
+            gap: 10px;
+            border-radius: 20px;
+            padding: 10px 15px;
+        }
+
+        nav > :first-child {
+            margin-right: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 5px 0;
+            font-size: 12px;
+            padding: 8px;
+        }
+
+        nav a img {
+            width: 80px;
+        }
+
         #presentation {
-            padding: 20px;
+            padding: 15px;
+            padding-top: 150px;
         }
 
         #presentation_intro {
-            padding: 15px;
-            gap: 10px;
+            padding: 15px 10px;
+            flex-direction: column;
         }
 
         #presentation_texte {
-            padding: 20px;
             width: 100%;
+            padding: 20px;
+            border-top-left-radius: 20px;
+        }
+
+        #presentation_texte h2 {
+            font-size: 20px;
+        }
+
+        #presentation_texte p {
+            font-size: 12px;
+            max-width: 100%;
+        }
+
+        #presentation_texte button {
+            padding: 10px 20px;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        #gallery {
+            padding: 20px 10px;
+        }
+
+        #gallery_boxes {
+            margin-top: 10px;
         }
 
         .gallery-box {
@@ -483,10 +626,223 @@
             gap: 15px;
         }
 
+        .gallery-image img {
+            width: 100%;
+            height: 200px;
+        }
+
+        .gallery-text {
+            max-height: 250px;
+            height: auto;
+            padding: 15px;
+            max-width: 100%;
+            min-width: 100%;
+        }
+
+        .gallery-text h3 {
+            font-size: 18px;
+        }
+
+        .gallery-text p {
+            font-size: 12px;
+        }
+
         .button_1_left, .button_1_right {
             width: 40px;
             height: 40px;
             font-size: 18px;
+            left: 10px;
+            right: 10px;
+        }
+
+        .button_1_left {
+            left: 10px;
+        }
+
+        .button_1_right {
+            right: 10px;
+        }
+
+        #gallery h2 {
+            font-size: 22px;
+            top: 10px;
+        }
+
+        #contacts {
+            padding: 40px 15px;
+        }
+
+        #footer_content {
+            gap: 20px;
+        }
+
+        #footer_contact h3, #footer_social h3 {
+            font-size: 16px;
+        }
+
+        #footer_contact p, #footer_social p {
+            font-size: 12px;
+        }
+
+        #footer_social > ul > li > a {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    /* MEDIA QUERIES - MOBILE */
+    @media (max-width: 480px) {
+        nav {
+            width: 100%;
+            margin: 10px 0;
+            padding: 8px 10px;
+            border-radius: 15px;
+        }
+
+        nav a {
+            margin: 3px 0;
+            font-size: 11px;
+            padding: 6px;
+        }
+
+        nav a img {
+            width: 70px;
+        }
+
+        #presentation {
+            padding: 10px;
+            padding-top: 120px;
+            height: auto;
+            min-height: 100vh;
+        }
+
+        #presentation_intro {
+            padding: 10px 0;
+            flex-direction: column;
+        }
+
+        #presentation_texte {
+            padding: 15px;
+            border-top-left-radius: 15px;
+        }
+
+        #presentation_texte h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        #presentation_texte p {
+            font-size: 11px;
+            margin-bottom: 15px;
+        }
+
+        #presentation_texte button {
+            padding: 8px 16px;
+            font-size: 12px;
+            margin-top: 15px;
+        }
+
+        #gallery {
+            height: auto;
+            min-height: 100vh;
+            padding: 15px 10px;
+        }
+
+        #gallery h2 {
+            font-size: 18px;
+            position: relative;
+            top: 0;
+            transform: none;
+            margin-bottom: 15px;
+        }
+
+        #gallery_boxes {
+            margin-top: 5px;
+        }
+
+        .gallery-box {
+            padding: 10px;
+            gap: 10px;
+            flex-direction: column;
+        }
+
+        .gallery-image img {
+            width: 100%;
+            height: 180px;
+        }
+
+        .gallery-text {
+            max-height: 200px;
+            height: auto;
+            padding: 12px;
+            max-width: 100%;
+            min-width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .gallery-text h3 {
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .gallery-text p {
+            font-size: 10px;
+            line-height: 1.4;
+        }
+
+        .button_1_left, .button_1_right {
+            width: 35px;
+            height: 35px;
+            font-size: 16px;
+            padding: 5px 10px;
+        }
+
+        .button_1_left {
+            left: 5px;
+        }
+
+        .button_1_right {
+            right: 5px;
+        }
+
+        #contacts {
+            padding: 30px 10px;
+            min-height: auto;
+        }
+
+        #footer_content {
+            flex-direction: column;
+            gap: 15px;
+            padding: 0 5px;
+        }
+
+        #footer_contact, #footer_social {
+            flex: 1;
+        }
+
+        #footer_contact h3, #footer_social h3 {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        #footer_contact p, #footer_social p {
+            font-size: 11px;
+            margin-bottom: 10px;
+        }
+
+        #footer_social > ul {
+            gap: 10px;
+        }
+
+        #footer_social > ul > li > a {
+            width: 28px;
+            height: 28px;
+        }
+
+        #box_1, #box_2 {
+            width: 100%;
+            height: auto;
+            padding: 15px;
         }
     }
 
