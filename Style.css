@@ -156,12 +156,13 @@
         align-items: flex-end; 
         position: relative; 
         width: 50%; 
+        font-size: 15px;
         min-width: 450px;
         height: 100vh;  
         background-color: wheat;
         padding: 50px;
         border-top-left-radius: 50px;
-        z-index: 99;
+        z-index: 100;
     }
 
     #presentation_texte h2 {
