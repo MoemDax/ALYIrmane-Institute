@@ -4,6 +4,9 @@ let button_left = document.querySelector('.button_1_left');
 let button_right = document.querySelector('.button_1_right');
 let currentIndex = 0;
 
+// Initialiser la première image
+boxes[0].classList.add('active-right');
+
 let autoPlay = setInterval(slideRight, 5000);
 let autoPlayActive = true;
 
@@ -62,7 +65,6 @@ button_left.addEventListener('click', function() {
     clearInterval(autoPlay);
     autoPlayActive = false;
     slideLeft(); 
-    autoPlay = setInterval(slideRight, 5000);
+    autoPlay = setInterval(slideLeft, 5000);
     autoPlayActive = true;
-}); 
-
+});
