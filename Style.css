@@ -156,7 +156,6 @@
         align-items: flex-end; 
         position: relative; 
         width: 50%; 
-        font-size: 15px;
         min-width: 450px;
         height: 100vh;  
         background-color: wheat;
@@ -172,7 +171,7 @@
     }
 
     #presentation_texte p {
-        font-size: 18px;
+        font-size: 14px;
         max-width: 600px;
         text-align: right; 
         text-wrap: balance;
